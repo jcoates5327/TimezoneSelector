@@ -1,0 +1,20 @@
+{
+    "name": "Select a timezone",
+    "description": "Use JS to choose a timezone instead of scrolling through a huge list.",
+    "version": "0.1",
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+	"browser_action": {
+		"default_icon": "beet_icon.png",
+		"default_popup": "popup.html"
+	},
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"], // *** this should  be changed before use - actual URL has been redacted here
+        "js": ["content.js"],
+        "run_at": "document_end"    // Pay attention to this line
+        }
+    ], 
+    "manifest_version": 2
+}
