@@ -1,7 +1,7 @@
 {
     "name": "Select a timezone",
     "description": "Use JS to choose a timezone instead of scrolling through a huge list.",
-    "version": "0.1",
+    "version": "0.2",
     "permissions": [
         "tabs","<all_urls>"
     ],
@@ -13,7 +13,7 @@
         {
         "matches": ["<all_urls>"], // *** this should  be changed before use - actual URL has been redacted here
         "js": ["content.js"],
-        "run_at": "document_end"    // Pay attention to this line
+        "run_at": "document_end"
         }
     ], 
     "manifest_version": 2
